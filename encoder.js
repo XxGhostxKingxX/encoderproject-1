@@ -1,5 +1,14 @@
 $("#divname").keydown(function(e) {
-  textArea
+  $("translationInputText").keydown(function(e) {
+    if(e.keyCode == 13) {
+    //translate
+    var message = $("translationInputText").val();
+    var messageArray = message.split("");
+    for (i = 0; i < cols; i++) {
+      messageArray[i].charCodeAt(0)-32+1
+    }
+    }
+  })
 });
 
 $("input[type='radio']"._____(function() {
