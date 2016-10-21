@@ -1,4 +1,5 @@
 var letters = {
+  //letters to translate
   64: "z",
   65: "a",
   66: "b",
@@ -11,23 +12,37 @@ var letters = {
   73: "i",
   74: "j",
   75: "k",
-  76: "l"
+  76: "l",
+  77: "m",
+  78: "n",
+  79: "o",
+  80: "p",
+  81: "q",
+  82: "r",
+  83: "s",
+  84: "t",
+  85: "u",
+  86: "v",
+  87: "w",
+  88: "x",
+  89: "y",
+  90: "z"
 }
 
 
 $("#inputText").keydown(function(e) {
   if ($("input:checked").val() == "echo") {
-    // code here
+    // echo coding
     $("#textArea").append(letters[e.keyCode])
   }
 
   if ($("input:checked").val() == "cipher") {
-    // code here
+    // cipher coding
     $("#textArea").append(letters[e.keyCode - 1])
   }
 
   if ($("input:checked").val() == "heiroglyphics") {
-    // code here
+    // heiroglyphics coding
     var htmlString = "<img src='images/heiroglyphics/" + letters[e.keyCode] +  ".gif'>"
     $("#textArea").append(htmlString)
   }
