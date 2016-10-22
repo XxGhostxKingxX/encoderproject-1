@@ -52,11 +52,13 @@ $("#inputText").keydown(function(e) {
 $("input[type='radio']").click(function() {
   $("input:checked").prop('checked', false)
   $(this).prop('checked', true)
+  //makes sure button works
+  // multiple buttons
 });
 
 $("#translationInputText").keydown(function(e) {
   if(e.keyCode == 13) {
-  //translate
+  //translates input text
   var message = $("#translationInputText").val();
   var messageArray = message.split("");
   for (i = 0; i < messageArray.length; i++) {
